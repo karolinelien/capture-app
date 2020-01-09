@@ -1,8 +1,8 @@
 // @flow
 
 type Location = {
-    longitude: number,
     latitude: number,
+    longitude: number,
 };
 
 function isNumValid(num) {
@@ -26,7 +26,7 @@ const isValidCoordinate = (value: Location) => {
         return false;
     }
 
-    const { longitude, latitude } = value;
+    const { latitude, longitude } = value;
     if (!isNumValid(latitude) || !isNumValid(longitude)) {
         return false;
     }
